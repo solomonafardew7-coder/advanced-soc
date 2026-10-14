@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b1118" />
+    <title>Northstar SOC · Security operations</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#overview" aria-label="Northstar SOC overview">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-copy">
+            <span class="brand-name">NORTHSTAR</span>
+            <span class="brand-subtitle">SECURITY OPERATIONS</span>
+          </span>
+        </a>
+
+        <div class="workspace-label">WORKSPACE</div>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <button class="nav-link is-active" type="button" data-view="overview" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">OV</span><span>Overview</span>
+          </button>
+          <button class="nav-link" type="button" data-view="alerts">
+            <span class="nav-icon" aria-hidden="true">AL</span><span>Alerts</span>
+          </button>
+          <button class="nav-link" type="button" data-view="incidents">
+            <span class="nav-icon" aria-hidden="true">IN</span><span>Incidents</span>
+          </button>
+          <button class="nav-link" type="button" data-view="audit" hidden>
+            <span class="nav-icon" aria-hidden="true">AU</span><span>Audit history</span>
+          </button>
+          <button class="nav-link" type="button" data-view="events">
+            <span class="nav-icon" aria-hidden="true">EV</span><span>Events</span>
+          </button>
+          <button class="nav-link" type="button" data-view="health">
+            <span class="nav-icon" aria-hidden="true">SY</span><span>System health</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <span class="local-indicator" aria-hidden="true"></span>
+          <span><strong>Local workspace</strong><small>Loopback connection only</small></span>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="topbar-title">
+            <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Toggle navigation" aria-expanded="false">
+              <span aria-hidden="true">☰</span>
+            </button>
+            <div>
+              <p class="eyebrow" id="page-eyebrow">SECURITY OPERATIONS</p>
+              <h1 id="page-title">Overview</h1>
+            </div>
+          </div>
+          <div class="topbar-actions">
+            <span class="connection-pill" id="connection-pill"><span class="connection-dot"></span><span>Not connected</span></span>
+            <button class="button button-secondary" id="connect-button" type="button">Sign in</button>
+            <button class="button button-quiet" id="disconnect-button" type="button" hidden>Sign out</button>
+          </div>
+        </header>
+
+        <div class="global-message" id="global-message" role="status" aria-live="polite" hidden></div>
+        <section class="page-content" id="app-view" tabindex="-1" aria-live="polite" aria-busy="false"></section>
+      </main>
+    </div>
+  </body>
+</html>

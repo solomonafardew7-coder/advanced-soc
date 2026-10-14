@@ -1,0 +1,13 @@
+{
+  "id": "SYNTHETIC-PRIVILEGE-PATTERN-001",
+  "name": "Denied root privilege-change pattern",
+  "type": "match",
+  "severity": "medium",
+  "description": "A synthetic privilege-change event targets root and is recorded as denied.",
+  "event_type": "privilege_change",
+  "conditions": {
+    "details.target_user": "root",
+    "details.outcome": "denied"
+  },
+  "enabled": true
+}

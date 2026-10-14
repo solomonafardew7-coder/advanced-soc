@@ -1,0 +1,6 @@
+{"timestamp":"2026-10-14T13:00:00Z","event_type":"authentication_failure","source":"sshd","source_ip":"198.51.100.42","severity":"high","username":"synthetic-user"}
+{"timestamp":"2026-10-14T13:01:00Z","event_type":"authentication_failure","source":"sshd","source_ip":"198.51.100.42","severity":"high","username":"synthetic-user"}
+{"timestamp":"2026-10-14T13:02:00Z","event_type":"authentication_failure","source":"sshd","source_ip":"198.51.100.42","severity":"high","username":"synthetic-user"}
+{"timestamp":"2026-10-14T13:03:00Z","event_type":"authentication_failure","source":"sshd","source_ip":"198.51.100.42","severity":"high","username":"synthetic-user"}
+{"timestamp":"2026-10-14T13:04:00Z","event_type":"authentication_failure","source":"sshd","source_ip":"198.51.100.42","severity":"high","username":"synthetic-user"}
+{"timestamp":"2026-10-14T13:06:00Z","event_type":"privilege_change","source":"synthetic-audit","source_ip":"198.51.100.42","severity":"medium","target_user":"root","outcome":"denied"}

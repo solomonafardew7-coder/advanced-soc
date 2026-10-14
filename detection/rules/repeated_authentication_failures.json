@@ -1,0 +1,11 @@
+{
+  "id": "AUTH-REPEATED-FAILURES-001",
+  "name": "Repeated authentication failures from one source",
+  "type": "threshold",
+  "severity": "high",
+  "description": "Repeated authentication failures from the same source IP within the configured time window.",
+  "event_type": "authentication_failure",
+  "threshold": 5,
+  "window_seconds": 300,
+  "enabled": true
+}

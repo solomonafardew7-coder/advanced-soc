@@ -1,0 +1,2 @@
+{"timestamp":"2026-10-14T09:00:00-04:00","event_type":"authentication_failure","source":"sshd","source_ip":"192.0.2.25","severity":"high","username":"synthetic-user"}
+{"event_timestamp":"2026-10-14T13:05:00Z","event_type":"process_observation","source":"synthetic-demo","details":{"process":"demo-agent","pid":4242}}
