@@ -1,3 +1,5 @@
+[![Advanced SOC CI](https://github.com/solomonafardew7-coder/advanced-soc/actions/workflows/tests.yml/badge.svg)](https://github.com/solomonafardew7-coder/advanced-soc/actions/workflows/tests.yml)
+
 # Advanced SOC Cybersecurity Platform
 
 A modular local platform for security-event ingestion, normalization,
